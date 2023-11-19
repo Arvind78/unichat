@@ -1,0 +1,415 @@
+ 
+/* Overall styling for the main container */
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(22, 20, 18);
+    overflow: hidden;
+}
+
+.designContainer {
+    height: 50%;
+    background-color: #1677ff;
+    background-image: url("../../assets/wave.svg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 0px 50px;
+}
+
+.loginformContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for the login container */
+.loginContainer {
+    height: 75%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6e4e4;
+    border-radius: 5px;
+    position: fixed;
+    top: 13%;
+    bottom: 0;
+    background-color: bisque;
+}
+
+/* Styling for the image container */
+.imgContainer {
+    height: 100%;
+    width: 57%;
+}
+
+.imgContainer img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* Styling for the form container */
+.formContainer {
+    height: 100%;
+    width: 43%;
+    padding: 10px 25px;
+    display: flex;
+    background-color: #fefefe;
+    border-radius: 0px 5px 5px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for the form */
+.form {
+    width: 100%;
+}
+
+/* Styling for the form heading with bounce animation */
+.formHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    50% {
+        transform: translateX(-2px);
+      }
+    60% {
+      transform: translateY(-5px);
+    }
+    80% {
+        transform: translateX(-2px);
+      }
+}
+
+.formHeading img {
+    animation: bounce 1s infinite;
+    height: 60px;
+    width: 60px;
+}
+
+/* Styling for form fields */
+.formField {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: 8px 0px;
+    flex-direction: column;
+}
+
+/* Styling for form field labels */
+.formField label {
+    padding: 3px;
+    font-size: 14px;
+}
+
+/* Styling for form field inputs */
+.formField input {
+    padding: 9px 15px;
+    border: 0.5px solid lightgray;
+    border-radius: 7px;
+    outline: none;
+}
+
+/* Styling for the forget password link */
+.forget {
+    margin: 12px 0px;
+    padding: 0px 9px;
+    text-align: end;
+    color: #1677ff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Styling for the login button */
+.loginBtn {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.loginBtn button {
+    width: 80%;
+    padding: 7px 0px;
+    border-radius: 40px;
+    border: none;
+    background-color: #1677ff;
+    color: #ffffff;
+    border: 0.5px solid lightgray;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styling for other sign-in options heading */
+.otherSigninOption h3 {
+    font-family: sans-serif;
+    margin: 4px;
+    color: rgba(137, 141, 137, 0.596);
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 20px;
+    max-width: 100%;
+    position: relative;
+    font-weight: bold;
+}
+
+/* Styling for the line before and after the other sign-in options heading */
+.otherSigninOption h3:before,
+.otherSigninOption h3:after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1.5px;
+    background: lightgray;
+    border-radius: 10px;
+    top: 50%;
+    position: absolute;
+}
+
+.otherSigninOption h3:before {
+    left: 55px;
+}
+
+.otherSigninOption h3:after {
+    right: 55px;
+}
+
+/* Styling for the Google sign-in button */
+.googleBtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    gap: 10px;
+    border: 0.5px solid lightgray;
+    background-color: #ffffff;
+    padding: 5px
+
+ 40px;
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+/* Styling for the hover effect on login button */
+.loginBtn button:hover {
+    background-color: #021b3d;
+    color: #ffffff;
+    transition: 450ms ease-in-out;
+}
+
+/* Styling for the hover effect on Google sign-in button */
+.googleBtn button:hover {
+    background-color: #021b3d;
+    color: #ffffff;
+    transition: 400ms ease;
+}
+
+/* Styling for the signup click text option */
+.signupClickOption p {
+    font-size: 13px;
+}
+
+.signupClickOption p span {
+    cursor: pointer;
+    color: #1677ff;
+}
+
+/* Styling for the error input message */
+.errors {
+    font-size: 13px;
+    padding: 2px 5px;
+    color: red;
+}
+
+@media (max-width: 1250px) {
+    .loginContainer {
+        height: 75%;
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e6e4e4;
+        border-radius: 5px;
+        position: fixed;
+        top: 15%;
+        bottom: 0;
+        box-shadow: 0px 0px 6px 0px #fefefe;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 1100px) {
+    .loginContainer {
+        height: 75%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e6e4e4;
+        border-radius: 5px;
+        position: fixed;
+        top: 15%;
+        bottom: 0;
+        box-shadow: 0px 0px 6px 0px #fefefe;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 1000px) {
+    .loginContainer {
+        height: 75%;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e6e4e4;
+        border-radius: 5px;
+        position: fixed;
+        top: 15%;
+        bottom: 0;
+        box-shadow: 0px 0px 6px 0px #fefefe;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 900px) {
+    .loginContainer {
+        height: 75%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e6e4e4;
+        border-radius: 5px;
+        position: fixed;
+        top: 15%;
+        bottom: 0;
+        box-shadow: 0px 0px 6px 0px #fefefe;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 800px) {
+    .loginContainer {
+        height: 75%;
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e6e4e4;
+        border-radius: 5px;
+        position: fixed;
+        top: 15%;
+        bottom: 0;
+        box-shadow: 0px 0px 6px 0px #fefefe;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 700px) {
+    .mainContainer {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        color: rgb(22, 20, 18);
+        overflow: hidden;
+    }
+
+    .designContainer {
+        height: 30%;
+        background-color: #1677ff;
+        width: 100%;
+        border-radius: 0px 0px 0px 50px;
+    }
+
+    .loginformContainer {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    /* Styling for the login container */
+    .loginContainer {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+        border-radius: 0px;
+        position: fixed;
+        top: 25%;
+        background-color: transparent;
+        bottom: 0;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .imgContainer {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    .imgContainer img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    /* Styling for the form container */
+    .formContainer {
+        height:auto;
+        width: 100%;
+        padding:0px;
+        padding: 0px 25px;
+        display: flex;
+        background-color: transparent;
+        border-radius: 0px 0px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .formHeading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:16px;
+        position: fixed;
+        top: 7%;
+        color: #ffffff;
+        flex-direction: column;
+    }
+}
+
+ 
+
